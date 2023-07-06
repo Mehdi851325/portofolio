@@ -64,11 +64,12 @@ const Projects = () => {
         </SwiperSlide>
       </Swiper>
       <HStack
+        w={'100%'}
         mt={50}
         color={color}
         bottom={0}
         position={"fixed"}
-        right={"50vw"}
+        justifyContent={'center'}
       >
         <Text fontSize={"sm"}>Mehdi Khakbaz | </Text>
         <Text cursor={"pointer"}>
@@ -84,19 +85,21 @@ const Projects = () => {
       <HStack position={"fixed"} left={"10vw"} bottom={"70px"} zIndex={10}>
         <Button
           className="btn-list-prv"
-          w={"60px"}
-          h={"60px"}
-          fontSize={"50px"}
+          w={{lg:"60px",base:"45px",md:"55px"}}
+          h={{lg:"60px",base:"45px",md:"55px"}}
+          fontSize={{lg:"50px",base:"35px",md:"45px"}}
           borderRadius={"50%"}
           cursor={"pointer"}
+          p={'8px'}
         >
           <IoIosArrowBack />
         </Button>
         <Button
           className="btn-list-next"
-          w={"60px"}
-          h={"60px"}
-          fontSize={"50px"}
+          w={{lg:"60px",base:"45px",md:"55px"}}
+          h={{lg:"60px",base:"45px",md:"55px"}}
+          fontSize={{lg:"50px",base:"35px",md:"45px"}}
+          p={'8px'}
           borderRadius={"50%"}
           cursor={"pointer"}
         >
