@@ -31,17 +31,16 @@ const Landing = () => {
       background: bgView,
       opacity: 1,
     });
-    console.log("enter");
   };
-  const hoverButtonLeave = () => {
-    gsap.to(buttonView, {
-      width: "45px",
-      borderRadius: "50%",
-      duration: 0.5,
-      background: "gray",
-      opacity: 0.3,
-    });
-  };
+  // const hoverButtonLeave = () => {
+  //   gsap.to(buttonView, {
+  //     width: "45px",
+  //     borderRadius: "50%",
+  //     duration: 0.5,
+  //     background: "gray",
+  //     opacity: 0.3,
+  //   });
+  // };
   useEffect(() => {
     gsap.from(image, {
       y: 20,
@@ -109,8 +108,8 @@ const Landing = () => {
           <Text fontSize="lg"> Mehdi Khakbaz </Text>
           <Text fontSize="lg">web designer & front-end developer</Text>
           <Box
-            onMouseEnter={hoverButtonHandler}
-            onMouseLeave={hoverButtonLeave}
+            onClick={hoverButtonHandler}
+            // onMouseLeave={hoverButtonLeave}
             cursor={"pointer"}
             mt={{ base: "5", md: "50" }}
             w={"100%"}
