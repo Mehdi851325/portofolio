@@ -105,7 +105,6 @@ const Home = () => {
             display="flex"
             alignItems="center"
             position="absolute"
-            bottom={'64vh'}
             w="100%"
             color="white"
             zIndex={5}
