@@ -105,6 +105,7 @@ const Home = () => {
             display="flex"
             alignItems="center"
             position="absolute"
+            bottom={0}
             w="100%"
             color="white"
             zIndex={5}
