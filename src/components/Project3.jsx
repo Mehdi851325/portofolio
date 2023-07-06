@@ -30,7 +30,7 @@ const Project3 = () => {
       >
         <HStack
           w={{ base: "100%", lg: "40%" }}
-          mt={{ base: "80px", lg: "0" }}
+          mt={{ base: "60px", lg: "0" }}
           h={{ base: "10vh", lg: "100vh" }}
         >
           <HStack ml={{ base: "0", lg: "80px" }}>
@@ -80,7 +80,7 @@ const Project3 = () => {
         w={{ base: "220px", md: "500px" }}
         h={"5px"}
         colorScheme="gray"
-        bottom={{ base: "145px", md: "200px" }}
+        bottom={{ base: "135px", md: "200px" }}
         value={75}
       ></Progress>
     </VStack>

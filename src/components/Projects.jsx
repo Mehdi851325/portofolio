@@ -64,12 +64,12 @@ const Projects = () => {
         </SwiperSlide>
       </Swiper>
       <HStack
-        w={'100%'}
+        w={"100%"}
         mt={50}
         color={color}
         bottom={0}
         position={"fixed"}
-        justifyContent={'center'}
+        justifyContent={"center"}
       >
         <Text fontSize={"sm"}>Mehdi Khakbaz | </Text>
         <Text cursor={"pointer"}>
@@ -82,24 +82,28 @@ const Projects = () => {
           <AiFillGithub />
         </Text>
       </HStack>
-      <HStack position={"fixed"} left={"10vw"} bottom={"70px"} zIndex={10}>
+      <HStack
+        ml={{ base: "10px", lg: "80px" }}
+        justifyContent={"flex-start"}
+        zIndex={10}
+      >
         <Button
           className="btn-list-prv"
-          w={{lg:"60px",base:"45px",md:"55px"}}
-          h={{lg:"60px",base:"45px",md:"55px"}}
-          fontSize={{lg:"50px",base:"35px",md:"45px"}}
+          w={{ lg: "60px", base: "45px", md: "55px" }}
+          h={{ lg: "60px", base: "45px", md: "55px" }}
+          fontSize={{ lg: "50px", base: "35px", md: "45px" }}
           borderRadius={"50%"}
           cursor={"pointer"}
-          p={'8px'}
+          p={"8px"}
         >
           <IoIosArrowBack />
         </Button>
         <Button
           className="btn-list-next"
-          w={{lg:"60px",base:"45px",md:"55px"}}
-          h={{lg:"60px",base:"45px",md:"55px"}}
-          fontSize={{lg:"50px",base:"35px",md:"45px"}}
-          p={'8px'}
+          w={{ lg: "60px", base: "45px", md: "55px" }}
+          h={{ lg: "60px", base: "45px", md: "55px" }}
+          fontSize={{ lg: "50px", base: "35px", md: "45px" }}
+          p={"8px"}
           borderRadius={"50%"}
           cursor={"pointer"}
         >
