@@ -84,13 +84,14 @@ const Projects = () => {
       </HStack>
       <HStack
         ml={{ base: "10px", lg: "80px" }}
+        mb={{base:"50px"}}
         justifyContent={"flex-start"}
         zIndex={10}
       >
         <Button
           className="btn-list-prv"
-          w={{ lg: "60px", base: "45px", md: "55px" }}
-          h={{ lg: "60px", base: "45px", md: "55px" }}
+          w={{ lg: "60px", base: "45px", md: "55px",'2xl':"60px" }}
+          h={{ lg: "60px", base: "45px", md: "55px",'2xl':"60px" }}
           fontSize={{ lg: "50px", base: "35px", md: "45px" }}
           borderRadius={"50%"}
           cursor={"pointer"}
@@ -100,8 +101,8 @@ const Projects = () => {
         </Button>
         <Button
           className="btn-list-next"
-          w={{ lg: "60px", base: "45px", md: "55px" }}
-          h={{ lg: "60px", base: "45px", md: "55px" }}
+          w={{ lg: "60px", base: "45px", md: "55px",'2xl':"60px" }}
+          h={{ lg: "60px", base: "45px", md: "55px",'2xl':"60px" }}
           fontSize={{ lg: "50px", base: "35px", md: "45px" }}
           p={"8px"}
           borderRadius={"50%"}
