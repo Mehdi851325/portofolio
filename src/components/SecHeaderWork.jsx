@@ -8,7 +8,7 @@ const SecHeaderWork = () => {
       <Flex
         bg={"bg"}
         ml={50}
-        pb={50}
+        pb={{base:"0",sm:"50"}}
         pt={50}
         w={"95%"}
         flexDirection={"column"}

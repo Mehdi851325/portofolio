@@ -191,24 +191,14 @@ const Secproject2 = () => {
           ref={(el) => (img = el)}
           right={"-100%"}
           display={{ base: "flex", lg: "none" }}
-          boxShadow="dark-lg"
+          boxShadow="-20px 20px 10px #00502c"
           zIndex={2}
           position={{ lg: "absolute" }}
           src={mouris}
           w={"auto"}
-          height={{ base: "200px",md:'300px' }}
+          height={{ base: "200px",md:'300px',lg:"200px",'2xl':"300px" }}
           mb={10}
         />
-        <Box
-          ref={(el) => (bgImg = el)}
-          right={"-100%"}
-          opacity={0.3}
-          display={"none"}
-          w={{ lg: "95%", base: "150%" }}
-          h={{ base: "260px", lg: "300px" }}
-          position={"absolute"}
-          bg={"#00502c"}
-        ></Box>
       </HStack>
     </HStack>
   );

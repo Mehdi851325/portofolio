@@ -142,7 +142,7 @@ const Landing = () => {
             <Text cursor={"pointer"} as={"ins"}>
               instagram{" "}
             </Text>
-            <Text> / </Text>
+            <Text> {""}/{""} </Text>
             <Text cursor={"pointer"} as={"ins"}>
               {" "}
               Github{" "}

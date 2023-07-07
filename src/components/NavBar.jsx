@@ -48,7 +48,7 @@ const NavBar = () => {
           <Link to="/">Home</Link>
         </Text>
         <Text fontSize="xl" m={3} cursor={"pointer"}>
-          <Link>About</Link>
+          <Link to={"/about"}>About</Link>
         </Text>
         <Text fontSize="xl" m={3} cursor={"pointer"}>
           <Link to="/projects">Projects</Link>
@@ -108,7 +108,7 @@ const NavBar = () => {
                   m={3}
                   cursor={"pointer"}
                 >
-                  <Link>About</Link>
+                  <Link to={"/about"}>About</Link>
                 </Text>
                 <Text
                   fontWeight={"bold"}

@@ -12,6 +12,7 @@ body {
   font-family: "Roboto", sans-serif;
   
 }
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
 
 .swiper{
   padding: 0;
@@ -30,4 +31,10 @@ body {
   background-position: fixed;
   transition: all 0.3s ease;
 
+}
+.text-jop{
+  writing-mode: vertical-rl;
+}
+.name-text{
+  font-family: 'Freehand', cursive;
 }
