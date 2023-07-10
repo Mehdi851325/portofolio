@@ -15,6 +15,9 @@ import { FaReact, FaSass } from "react-icons/fa";
 import { FiFramer } from "react-icons/fi";
 //image
 import mouris from "../img/mouris.webp";
+import { motion } from "framer-motion";
+import { seeDemo } from "../animation";
+import { Link } from "react-router-dom";
 
 const Project2 = () => {
   const color = useColorModeValue("light", "dark");
@@ -45,6 +48,14 @@ const Project2 = () => {
               <FaReact />
               <FiFramer />
             </HStack>
+            <Stack>
+            <Text as={motion.p}
+              variants={seeDemo}
+              initial="hidden"
+              animate="show" mb={{base:"30px"}} cursor={"pointer"} fontWeight={"normal"} fontSize={"2xl"}>
+              <Link to={'https://muoris-mehdi851325.vercel.app/'}>See demo</Link>
+            </Text>
+          </Stack>
           </VStack>
         </HStack>
         <Stack

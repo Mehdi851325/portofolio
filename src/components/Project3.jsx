@@ -12,9 +12,12 @@ import {
 } from "@chakra-ui/react";
 //icon
 import { FaReact, FaSass } from "react-icons/fa";
-import { BiLogoRedux, BiLogoJavascript } from "react-icons/bi";
+import { BiLogoRedux } from "react-icons/bi";
 //image
 import timovito from "../img/timovito.webp";
+import { motion } from "framer-motion";
+import { seeDemo } from "../animation";
+import { Link } from "react-router-dom";
 
 const Project3 = () => {
   const color = useColorModeValue("light", "dark");
@@ -47,6 +50,14 @@ const Project3 = () => {
               <FaReact />
               <BiLogoRedux />
             </HStack>
+            <Stack>
+            <Text as={motion.p}
+              variants={seeDemo}
+              initial="hidden"
+              animate="show" mb={{base:"30px"}} cursor={"pointer"} fontWeight={"normal"} fontSize={"2xl"}>
+              <Link to={'https://ti-movie-to.vercel.app/'}>See demo</Link>
+            </Text>
+          </Stack>
           </VStack>
         </HStack>
         <Stack

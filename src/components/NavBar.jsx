@@ -42,7 +42,7 @@ const NavBar = () => {
         alignItems={"center"}
         justifyContent={"flex-end"}
         pr={50}
-        mb={{ base: "2", md: "50" }}
+        mb={{ base: "2", md: "20px" }}
       >
         <Text fontSize="xl" m={3} cursor={"pointer"}>
           <Link to="/">Home</Link>

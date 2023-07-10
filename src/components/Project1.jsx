@@ -15,6 +15,8 @@ import { AiFillHtml5 } from "react-icons/ai";
 import { BiLogoCss3, BiLogoJavascript } from "react-icons/bi";
 //image
 import modeling from "../img/modeling.webp";
+import { motion } from "framer-motion";
+import { seeDemo } from "../animation";
 
 const Project1 = () => {
   const color = useColorModeValue("light", "dark");
@@ -49,6 +51,14 @@ const Project1 = () => {
               <BiLogoCss3 />
               <BiLogoJavascript />
             </HStack>
+            <Stack>
+            <Text as={motion.p}
+              variants={seeDemo}
+              initial="hidden"
+              animate="show" mb={{base:"30px"}} cursor={"pointer"} fontWeight={"normal"} fontSize={"2xl"}>
+              See demo
+            </Text>
+          </Stack>
           </VStack>
         </HStack>
         <Stack

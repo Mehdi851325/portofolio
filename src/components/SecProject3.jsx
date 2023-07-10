@@ -8,6 +8,7 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { gsap } from "gsap";
 //image
 import timovito from "../img/timovito.webp";
+import { Link } from "react-router-dom";
 
 const Secproject3 = () => {
   const bgView = useColorModeValue("white", "dark");
@@ -89,7 +90,7 @@ const Secproject3 = () => {
     ///image view
     gsap.to(img, {
       display: "{base:'flex',md:'none'}",
-      right: "-100%",
+      right: "-120%",
       duration: 0.5,
     });
     ///image view
@@ -157,6 +158,7 @@ const Secproject3 = () => {
         flexWrap={{ base: "wrap", lg: "nowrap" }}
         justifyContent={{ base: "center", lg: "flex-end" }}
       >
+        <Link to={'/project3'}>
         <Box
           zIndex={4}
           w={{ base: "150px", md: "160px", xl: "200px" }}
@@ -187,6 +189,7 @@ const Secproject3 = () => {
             <ArrowForwardIcon cursor={"pointer"} w={10} boxSize={6} ml={5} />
           </Box>
         </Box>
+        </Link>
         <Image
           ref={(el) => (img = el)}
           right={"-100%"}

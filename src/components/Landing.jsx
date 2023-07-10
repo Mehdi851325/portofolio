@@ -4,17 +4,21 @@ import profile from "../img/pro1.webp";
 //animation
 import { gsap } from "gsap";
 import { motion } from "framer-motion";
+import { titleAnimation1 } from "../animation";
 //chakra ui
 import {
   Box,
   Flex,
   HStack,
   Image,
+  Stack,
   Text,
   VStack,
   useColorModeValue,
 } from "@chakra-ui/react";
+//icon
 import { ArrowForwardIcon } from "@chakra-ui/icons";
+//react router
 import { Link } from "react-router-dom";
 
 const Landing = () => {
@@ -92,7 +96,12 @@ const Landing = () => {
           alignItems={"flex-start"}
           ml={{ base: "0", md: "5" }}
         >
+          <Stack overflow={'hidden'}>
           <Text
+           as={motion.p}
+           variants={titleAnimation1}
+           initial="hidden"
+            animate="show"
             fontWeight={"bold"}
             fontSize={{
               base: "2xl",
@@ -105,6 +114,7 @@ const Landing = () => {
           >
             Creative developer.
           </Text>
+          </Stack>
           <Text fontSize="lg"> Mehdi Khakbaz </Text>
           <Text fontSize="lg">web designer & front-end developer</Text>
           <Box

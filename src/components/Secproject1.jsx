@@ -1,17 +1,20 @@
-import React, { useRef } from "react";
+import React, {  useRef } from "react";
 //Chakra Ui
-import { Box, HStack, Image, Text } from "@chakra-ui/react";
+import { Box, HStack, Image, Text, chakra } from "@chakra-ui/react";
 import { useColorModeValue } from "@chakra-ui/react";
 //animation
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 //gsao
 import { gsap } from "gsap";
 //image
 import modeling from "../img/modeling.webp";
+import { Link } from "react-router-dom";
 
 const Secproject1 = () => {
   const bgView = useColorModeValue("white", "dark");
+  const controls = useAnimation();
+  const ChakraImage = chakra(motion.img);
 
   let miniLine = useRef(null);
   let textName = useRef(null);
@@ -19,6 +22,7 @@ const Secproject1 = () => {
   let view = useRef(null);
   let img = useRef(null);
   let bgImg = useRef(null);
+  // let boxImg = useRef(null);
   const hoverHandler = () => {
     ///line gsap
     gsap.to(miniLine, {
@@ -90,7 +94,7 @@ const Secproject1 = () => {
     ///image view
     gsap.to(img, {
       display: "{base:'flex',md:'none'}",
-      right: "-100%",
+      right: "-120%",
       duration: 0.5,
     });
     ///image view
@@ -182,7 +186,7 @@ const Secproject1 = () => {
             fontWeight={"bold"}
             fontSize={{ base: "small", md: "md" }}
           >
-            VIEW PROJECT
+            <Link to={"/project1"}>VIEW PROJECT</Link>
           </Text>
           <Box zIndex={3} as={motion.div} whileHover={{ scale: 1.3 }}>
             <ArrowForwardIcon
@@ -193,16 +197,16 @@ const Secproject1 = () => {
             />
           </Box>
         </Box>
-        <Image
+        <ChakraImage
           ref={(el) => (img = el)}
           right={"-100%"}
-          display={{ base: "flex", lg: "none" }}
+          display={{ base: "flex" }}
           boxShadow="-20px 20px gray"
           zIndex={2}
           position={{ lg: "absolute" }}
           src={modeling}
           w={"auto"}
-          height={{ base: "200px",md:'300px',lg:"200px",'2xl':"300px" }}
+          height={{ base: "200px", md: "300px", lg: "200px", "2xl": "300px" }}
           mb={10}
         />
       </HStack>

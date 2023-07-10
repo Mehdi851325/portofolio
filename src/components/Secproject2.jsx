@@ -8,6 +8,7 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { gsap } from "gsap";
 //image
 import mouris from "../img/mouris.webp";
+import { Link } from "react-router-dom";
 
 const Secproject2 = () => {
   const bgView = useColorModeValue("white", "dark");
@@ -89,7 +90,7 @@ const Secproject2 = () => {
     ///image view
     gsap.to(img, {
       display: "{sm:'flex',md:'none'}",
-      right: "-100%",
+      right: "-120%",
       duration: 0.5,
     });
     ///image view
@@ -157,6 +158,7 @@ const Secproject2 = () => {
         flexWrap={{ base: "wrap", lg: "nowrap" }}
         justifyContent={{ base: "center", lg: "flex-end" }}
       >
+        <Link to={'/project2'}>
         <Box
           zIndex={4}
           w={{ base: "150px", md: "160px", xl: "200px" }}
@@ -187,11 +189,12 @@ const Secproject2 = () => {
             <ArrowForwardIcon cursor={"pointer"} w={10} boxSize={6} ml={5} />
           </Box>
         </Box>
+        </Link>
         <Image
           ref={(el) => (img = el)}
           right={"-100%"}
           display={{ base: "flex", lg: "none" }}
-          boxShadow="-20px 20px 10px #00502c"
+          boxShadow="-20px 20px #00502c50"
           zIndex={2}
           position={{ lg: "absolute" }}
           src={mouris}
