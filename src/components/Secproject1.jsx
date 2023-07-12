@@ -200,7 +200,7 @@ const Secproject1 = () => {
         <ChakraImage
           ref={(el) => (img = el)}
           right={"-100%"}
-          display={{ base: "flex" }}
+          display={{ base: "flex",lg:"none" }}
           boxShadow="-20px 20px gray"
           zIndex={2}
           position={{ lg: "absolute" }}
