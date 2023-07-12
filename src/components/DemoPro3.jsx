@@ -1,6 +1,13 @@
 import React from "react";
 //chakra ui
-import { Box, Image, Stack, Text, VStack, useColorModeValue } from "@chakra-ui/react";
+import {
+  Box,
+  Image,
+  Stack,
+  Text,
+  VStack,
+  useColorModeValue,
+} from "@chakra-ui/react";
 //animation
 import { motion } from "framer-motion";
 import {
@@ -11,6 +18,7 @@ import {
   titleAnimation,
   lineAnimate,
   seeDemo,
+  demoPage,
 } from "../animation";
 //icon
 import { FaReact, FaSass } from "react-icons/fa";
@@ -21,9 +29,9 @@ import NavBar from "./NavBar";
 import timovito from "../img/timovito.webp";
 
 const DemoPro3 = () => {
-  const color = useColorModeValue( "2px dotted black","2px dotted white");
+  const color = useColorModeValue("2px dotted black", "2px dotted white");
   return (
-    <VStack position={"relative"}  >
+    <VStack position={"relative"}>
       <Stack
         as={motion.div}
         position={"fixed"}
@@ -89,8 +97,8 @@ const DemoPro3 = () => {
         fontSize={"45px"}
       >
         <FaSass />
-              <FaReact />
-              <BiLogoRedux />
+        <FaReact />
+        <BiLogoRedux />
       </Stack>
       <Stack
         as={motion.div}
@@ -110,10 +118,17 @@ const DemoPro3 = () => {
         color={"gray.100"}
         fontSize={"45px"}
       ></Stack>
-      <VStack w={'100%'} minH={"100vh"} >
+      <VStack
+        as={motion.div}
+        w={"100%"}
+        minH={"100vh"}
+        variants={demoPage}
+        initial="hidden"
+        animate="show"
+      >
         <NavBar />
         <Stack>
-          <Image src={timovito} mt={{base:"100px" ,md:"10px"}} />
+          <Image src={timovito} mt={{ base: "100px", md: "10px" }} />
         </Stack>
         <VStack mt={"auto"}>
           <Stack overflow={"hidden"}>
@@ -123,17 +138,23 @@ const DemoPro3 = () => {
               initial="hidden"
               animate="show"
               fontWeight={"medium"}
-              mb={{base:"30px"}}
+              mb={{ base: "40px", md: "15px" }}
               fontSize={{ base: "2xl", md: "4xl", lg: "5xl", "2xl": "6xl" }}
             >
               TiMovieTo movie website
             </Text>
           </Stack>
           <Stack>
-            <Text as={motion.p}
+            <Text
+              as={motion.p}
               variants={seeDemo}
               initial="hidden"
-              animate="show" mb={{base:"30px"}} cursor={"pointer"} fontWeight={"normal"} fontSize={"2xl"}>
+              animate="show"
+              mb={{ base: "30px", md: "10px" }}
+              cursor={"pointer"}
+              fontWeight={"normal"}
+              fontSize={"2xl"}
+            >
               See demo
             </Text>
           </Stack>
@@ -149,18 +170,18 @@ const DemoPro3 = () => {
             ></Box>
           </Stack>
         </VStack>
+        <Box
+          w={"900px"}
+          h={"900px"}
+          borderRadius={"50%"}
+          bg={"transparent"}
+          border={color}
+          position={"fixed"}
+          bottom={"-50%"}
+          zIndex={-1}
+          display={{ lg: "flex", base: "none" }}
+        ></Box>
       </VStack>
-      <Box
-        w={"900px"}
-        h={"900px"}
-        borderRadius={"50%"}
-        bg={"transparent"}
-        border={color}
-        position={"fixed"}
-        bottom={"-50%"}
-        zIndex={-1}
-        display={{ lg: "flex", base: "none" }}
-      ></Box>
     </VStack>
   );
 };

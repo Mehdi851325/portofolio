@@ -102,3 +102,17 @@ export const seeDemo = {
     },
   },
 };
+
+export const demoPage = {
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      duration: 1,
+      ease: "easeOut",
+      delay: 1.2,
+    },
+  },
+};
