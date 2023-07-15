@@ -72,7 +72,7 @@ const About = () => {
             mt={{ md: "100px", base: "0px" }}
             lineHeight={"tall"}
           >
-            My Skill.
+            My Skills.
           </Text>
         </Stack>
         <Stack
@@ -159,7 +159,7 @@ const About = () => {
             </HStack>
             <HStack mt={"20px"}>
               <Text color={"gray.200"} fontSize={{ lg: "lx", md: "medium" }}>
-                Mahdi.dev.kb@gmail.com
+                Mehdikhakbaz1995@gmail.com
               </Text>
             </HStack>
             <HStack mt={{base:"0px",md:"20px"}}>
