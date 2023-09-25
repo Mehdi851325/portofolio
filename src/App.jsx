@@ -12,6 +12,7 @@ import About from "./components/About";
 import DemoPro1 from "./components/DemoPro1";
 import DemoPro2 from "./components/DemoPro2";
 import DemoPro3 from "./components/DemoPro3";
+import DemoPro5 from "./components/DemoPro5";
 
 function App() { 
   const location = useLocation()
@@ -26,6 +27,7 @@ function App() {
           <Route path="/project1" element={<DemoPro1 />} />
           <Route path="/project2" element={<DemoPro2 />} />
           <Route path="/project3" element={<DemoPro3 />} />
+          <Route path="/project5" element={<DemoPro5 />} />
         </Routes>
       </AnimatePresence>
     </>

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import  { useRef } from "react";
 //Chakra Ui
 import { Box, HStack, Image, Text, useColorModeValue } from "@chakra-ui/react";
 //animation

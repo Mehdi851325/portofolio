@@ -8,10 +8,10 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 //gsao
 import { gsap } from "gsap";
 //image
-import modeling from "../img/modeling.webp";
+import gaming from "../img/gaming.webp";
 import { Link } from "react-router-dom";
 
-const Secproject1 = () => {
+const SecProjectNew = () => {
   const bgView = useColorModeValue("white", "dark");
   // const controls = useAnimation();
   const ChakraImage = chakra(motion.img);
@@ -124,7 +124,7 @@ const Secproject1 = () => {
             bg={"gray.400"}
           ></Box>
           <Text ml={5} color={"gray.400"}>
-            01
+            new
           </Text>
         </Box>
         <Box
@@ -143,16 +143,16 @@ const Secproject1 = () => {
             color={"gray.300"}
             fontSize={"9xl"}
           >
-            01
+            NEW
           </Text>
           <Text
             ref={(el) => (textName = el)}
             fontSize={{ base: "xl", md: "2xl" }}
           >
-            Modeling
+            Gaming
           </Text>
           <Text color={"gray.400"} fontSize={"sm"}>
-            HTML / CSS / JS
+            Chakra Ui / React / TypeScript / ReactQuery / Zustand
           </Text>
         </Box>
       </HStack>
@@ -186,7 +186,7 @@ const Secproject1 = () => {
             fontWeight={"bold"}
             fontSize={{ base: "small", md: "md" }}
           >
-            <Link to={"/project1"}>VIEW PROJECT</Link>
+            <Link to={"/project5"}>VIEW PROJECT</Link>
           </Text>
           <Box zIndex={3} as={motion.div} whileHover={{ scale: 1.3 }}>
             <ArrowForwardIcon
@@ -204,7 +204,7 @@ const Secproject1 = () => {
           boxShadow="-20px 20px gray"
           zIndex={2}
           position={{ lg: "absolute" }}
-          src={modeling}
+          src={gaming}
           w={"auto"}
           height={{ base: "200px", md: "300px", lg: "200px", "2xl": "300px" }}
           mb={10}
@@ -214,4 +214,4 @@ const Secproject1 = () => {
   );
 };
 
-export default Secproject1;
+export default SecProjectNew;

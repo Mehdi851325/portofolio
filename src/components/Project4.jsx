@@ -1,4 +1,4 @@
-import React from "react";
+
 //chakra ui
 import {
   Box,
@@ -11,7 +11,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 //icon
-import { FaReact, FaSass } from "react-icons/fa";
+import { FaReact} from "react-icons/fa";
 import { SiChakraui } from "react-icons/si";
 //image
 import portofolio from "../img/portfolio.webp";

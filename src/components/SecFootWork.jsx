@@ -1,4 +1,4 @@
-import React from "react";
+
 //Chakra Ui
 import { Box, Image, Text, VStack } from "@chakra-ui/react";
 //image

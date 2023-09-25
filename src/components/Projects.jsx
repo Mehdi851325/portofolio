@@ -1,4 +1,4 @@
-import React from "react";
+
 //component
 import NavBar from "./NavBar";
 import Project1 from "./Project1";
@@ -26,6 +26,7 @@ import {
 import { FaTelegram } from "react-icons/fa";
 import { AiFillInstagram, AiFillGithub } from "react-icons/ai";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import Project5 from "./Project5";
 
 const Projects = () => {
   const bg = useColorModeValue(
@@ -50,6 +51,9 @@ const Projects = () => {
         }}
         modules={[Navigation]}
       >
+        <SwiperSlide>
+          <Project5 />
+        </SwiperSlide>
         <SwiperSlide>
           <Project1 />
         </SwiperSlide>

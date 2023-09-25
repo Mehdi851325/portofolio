@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import  { useEffect, useRef } from "react";
 //Chakra UI is available
 import { Box, Stack, Text, VStack } from "@chakra-ui/react";
 //import gsap

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import  { useEffect, useRef } from "react";
 //image
 import profile from "../img/pro1.webp";
 //animation
@@ -61,21 +61,21 @@ const Landing = () => {
     });
     gsap.from(linepro, {
       height: "0px",
-      delay: 2,
+      delay: 3,
     });
     gsap.to(linepro, {
       height: "130%",
-      delay: 2,
-      duration: 2.6,
+      delay: 3,
+      duration: 2,
     });
     gsap.from(linepro1, {
       height: "0px",
-      delay: 2,
+      delay: 3,
     });
     gsap.to(linepro1, {
       height: "130%",
-      delay: 2,
-      duration: 2.6,
+      delay: 3,
+      duration: 2,
     });
   });
   return (

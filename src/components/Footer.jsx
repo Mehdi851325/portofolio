@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import  { useRef } from "react";
 import { FaTelegram } from "react-icons/fa";
 import { AiFillInstagram, AiFillGithub } from "react-icons/ai";
 //chakra ui
@@ -43,7 +43,7 @@ const Footer = () => {
   return (
     <VStack bg={bg} pt={20} w={"100%"} minH={'40vh'} color={"white"}>
       <VStack mb={20}>
-        <Text fontSize={"4xl"}>Let's work together.</Text>
+        <Text fontSize={"4xl"}>Let&apos;s work together.</Text>
         <Text fontSize={"xl"}>send massage for freelance work.</Text>
       </VStack>
       <Stack mb={"90px"}>

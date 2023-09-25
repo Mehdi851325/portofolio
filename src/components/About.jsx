@@ -1,7 +1,7 @@
-import React from "react";
+
 import NavBar from "./NavBar";
 import {
-  Box,
+  
   HStack,
   Image,
   Stack,
@@ -102,6 +102,8 @@ const About = () => {
               React JS
             </Text>
             <Text fontSize={{ "2xl": "3xl", lg: "2xl", md: "xl" }}>Redux</Text>
+            <Text fontSize={{ "2xl": "3xl", lg: "2xl", md: "xl" }}>ReactQuery</Text>
+            <Text fontSize={{ "2xl": "3xl", lg: "2xl", md: "xl" }}>Zustand</Text>
             <Text fontSize={{ "2xl": "3xl", lg: "2xl", md: "xl" }}>Github</Text>
             <Text fontSize={{ "2xl": "3xl", lg: "2xl", md: "xl" }}>
               Rest API
@@ -121,7 +123,7 @@ const About = () => {
         >
           <VStack mb={20} w={{ md: "50%", base: "100%" }}>
             <Text fontSize={{ "2xl": "4xl", lg: "3xl", md: "xl" }}>
-              Let's work together.
+              Let&apos;s work together.
             </Text>
             <Text fontSize={{ lg: "lx", md: "medium" }}>
               send massage for freelance work.
